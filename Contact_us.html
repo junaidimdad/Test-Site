@@ -8,84 +8,101 @@
    <meta name="keywords" content="Junaid, HTML, CSS, Portfolio, Design"> <!-- FOR SEO -->
    <meta name="viewport" content="width=width-device, initial-scale=1.0">
    <title> Junaid's Website </title>
+
+   <script></script>
+   <style>
+
+*{
+  font-family:Montserrat; font-weight: Bold
+}
+
+.custom{
+margin-right: 5%; color:#173653;
+}
+#home{
+  margin-left: 5%; margin-right: 5%; color:#173653;
+}
+
+.edit{
+  margin-left: 50%
+}
+
+</style>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   </head>
 
-  <body style="background-repeat: no-repeat; background-size: cover; background-image: url('images/bgg.png'); color:#173653; background-color:#F7F9F9; font-family:Montserrat;">
+  <body style="background-repeat: no-repeat; background-size: cover; background-image: url('images/bgg.png'); color:#173653; background-color:#F7F9F9; ">
 
 
     <header>
-      <div style="background-color:white; height:110px;">
+
+      <div>
         <a href="https://phi.consulting/" target="_blank"> <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQH8X7CUvvQipg/company-logo_200_200/0/1628495148809?e=1662595200&v=beta&t=DBpoIxr7Lg_pWB03jP-zJn08Y3lbl4cEZk4UuRttAdQ" controls width="100" alt="Phi Logo"></a>
 
-        <b>
 
-      <a style="margin-left: 5%; margin-right: 5%; color:#173653;" href="index.html">Home</a>
-      <a style="margin-right: 5%; color:#173653;" href="about.html">About</a>
-      <a style="margin-right: 5%; color:#173653;" href="Contact_us.html"> Projects</a>
-      <a style="margin-right: 5%; color:#173653;" href="Contact_us.html"> Careers</a>
-        <a style="margin-right: 5%; color:#173653;" href="Contact_us.html"> Contact Us</a>
+
+      <a id="home" href="index.html">Home</a>
+      <a class="custom" href="about.html">About</a>
+      <a class="custom" href="Contact_us.html"> Projects</a>
+      <a class="custom" href="Contact_us.html"> Careers</a>
+        <a class="custom" href="Contact_us.html"> Contact Us</a>
     </div>
-<br><br><br>
-<!--<div style="margin-left:40%; margin-right:40%;"> -->
+<br>
 <center>
       <h1> Application Form </h1>
 </center>
-</div>
 
 
      </header>
 
 
-
+     <div style="margin-left:30%" class="container-sm edit">
      <main>
        <br>
-       <div style="margin-left:40%;">
+       <div>
 
-        <form>
-         <label>Full Name: <br></label><input type="text" placeholder="Enter your full name" ><br><br>
-         <label>Email Address: <br> </label><input type="text" placeholder="Enter your email address"><br><br>
-         <label>Phone Number: <br> </label><input type="text" placeholder="Enter your phone number"><br><br>
-         <label>Upload Your CV: <br> </label><input type="file" id="myfile" name="myfile">
+         <form>
+   <div class="mb-3 w-50">
+     <label for="exampleFullName" class="form-label" >Full Name</label>
+     <input type="name" class="form-control" id="exampleFullName" aria-describedby="emailHelp" placeholder="Enter your name here" ;>
 
-         <br><br><br>
-         <label>Cover Letter: </label><br>
-         <textarea cols="50" rows="8" placeholder="Enter here"></textarea>
-
-         <br><br>
+   </div>
 
 
-          <label for="cars">Are you currently employed here?</label><br><br>
+     <div class="mb-3 w-50">
+       <label for="exampleInputEmail1" class="form-label">Email address</label>
+       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email here">
+
+     </div>
 
 
-           <select name="Current Employed" id="Current Employed">
-             <option value="Yes">Yes</option>
-         <option value="No">No</option>
-       </select>
-       <br><br>
+   <div class="mb-3 w-50">
+     <label for="examplePhoneNumber" class="form-label">Phone Number</label>
+     <input type="text" class="form-control" id="examplePhoneNumber" placeholder="Enter your phone number here";>
+   </div>
+   <div class="mb-3 w-50">
+     <label for="formFile" class="form-label">Upload Your CV</label>
+     <input class="form-control" type="file" id="formFile">
+   </div>
 
 
-         <input type="submit">
-       </div>
-
-
-         </form>
-
-
+   <div class="mb-3 form-check">
+     <input type="checkbox" class="form-check-input" id="exampleCheck1">
+     <label class="form-check-label" for="exampleCheck1">Check me out</label>
+   </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
 
 
 </form>
-
-</b>
-
+       </div>
 
      </main>
-
-
-
-
+   </div>
 
   </body>
-
-
 
  </html>
